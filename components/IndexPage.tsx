@@ -5,6 +5,7 @@ import HeroPost from 'components/HeroPost'
 import MoreStories from 'components/MoreStories'
 import * as demo from 'lib/demo.data'
 import type { Post, Settings } from 'lib/sanity.queries'
+import Subscribe from './Subscribe'
 
 export default function IndexPage(props: {
   preview?: boolean
@@ -32,6 +33,7 @@ export default function IndexPage(props: {
             />
           )}
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+          <Subscribe />
         </Container>
       </Layout>
     </>
